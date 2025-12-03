@@ -2,7 +2,7 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Bài 8</title>
+    <title>Bài học HTML</title>
 
     <style>
         body {
@@ -31,19 +31,34 @@
             padding:14px;
             border-radius:10px;
             overflow:auto;
+            white-space:pre-wrap;
+        }
+
+        .raw-box {
+            border:2px solid #2f5bb7;
+            padding:14px;
+            border-radius:12px;
+            background:#f8fbff;
+            white-space:pre-wrap;
+            font-family: Consolas, monospace;
         }
 
         img {
             max-width:100%;
+            margin-top:12px;
+            border-radius:10px;
         }
     </style>
 </head>
 
 <body>
 
-    <h1>Bài 8</h1>
+    <h1>Bài học HTML – Tổng hợp</h1>
 
-
+    <!-- PHẦN NỘI DUNG GỐC BẠN ĐANG DÙNG -->
+    <section class="card">
+        <h2>Nội dung ban đầu</h2>
+        <p>(Giữ nguyên phần nội dung mà bạn đã có trước đó…)</p>
     </section>
 
 
@@ -56,32 +71,32 @@
         <!-- Luyện tập 1 -->
         <h3>1. Luyện tập 1</h3>
 
-        <div style="border:2px solid #2f5bb7; padding:12px; border-radius:12px; background:#f8fbff">
-            <p>
-                Thẻ <b><span style="color:red">strong</span></b> và thẻ 
-                <b><span style="color:red">em</span></b> được sử dụng để nhấn mạnh vào 
-                <b><span style="color:blue">nội dung</span></b> trong phần tử. 
-                Thẻ <b><span style="color:red">b</span></b> chỉ có tác dụng 
-                <b><span style="color:blue">in đậm</span></b> văn bản.
-            </p>
+        <!-- RAW CODE, KHÔNG CHẠY -->
+        <div class="raw-box">
+&lt;p&gt;Thẻ &lt;strong&gt; và thẻ &lt;em&gt; để nhấn mạnh nội dung.&lt;/p&gt;
+&lt;p&gt;Thẻ &lt;b&gt; chỉ để in đậm văn bản.&lt;/p&gt;
         </div>
 
 
         <!-- Luyện tập 2 -->
         <h3 style="margin-top:18px">2. Luyện tập 2</h3>
 
-        <p><strong>INTERNET TỐC ĐỘ CAO</strong></p>
+        <!-- In HTML ra web, không chạy -->
+        <pre>
+&lt;p&gt;&lt;strong&gt;INTERNET TỐC ĐỘ CAO&lt;/strong&gt;&lt;/p&gt;
 
-        <p><i>Dịch vụ Internet tốc độ cao là dịch vụ Internet cáp quang chất lượng cao, ổn định, giá cả hợp lí.</i></p>
+&lt;p&gt;&lt;i&gt;Dịch vụ Internet tốc độ cao là dịch vụ Internet cáp quang chất lượng cao, ổn định, giá cả hợp lí.&lt;/i&gt;&lt;/p&gt;
 
-        <p><strong>Các tính năng nổi bật:</strong></p>
+&lt;p&gt;&lt;strong&gt;Các tính năng nổi bật:&lt;/strong&gt;&lt;/p&gt;
 
-        <p>Tốc độ siêu cao từ 150 MBps trở lên</p>
-        <p>Lắp đặt nhanh chóng trong 24h</p>
-        <p>Phù hợp với cá nhân/Hộ gia đình</p>
-        <p>Tặng Modem 2 băng tần</p>
-        <p>Miễn phí lắp đặt</p>
-        <p>Hỗ trợ 24/7</p>
+&lt;p&gt;Tốc độ siêu cao từ 150 MBps trở lên&lt;/p&gt;
+&lt;p&gt;Lắp đặt nhanh chóng trong 24h&lt;/p&gt;
+&lt;p&gt;Phù hợp với cá nhân/Hộ gia đình&lt;/p&gt;
+&lt;p&gt;Tặng Modem 2 băng tần&lt;/p&gt;
+&lt;p&gt;Miễn phí lắp đặt&lt;/p&gt;
+&lt;p&gt;Hỗ trợ 24/7&lt;/p&gt;
+        </pre>
+
     </section>
 
 
@@ -99,18 +114,20 @@
             <li>Chọn màu cụ thể từ bức ảnh.</li>
             <li>Chọn ảnh nền phù hợp.</li>
             <li>Tạo tiêu đề bằng thẻ &lt;h1&gt;, &lt;h2&gt; hoặc &lt;h3&gt;.</li>
-            <li>Sử dụng thuộc tính <code>color</code> để đổi màu chữ.</li>
+            <li>Sử dụng thuộc tính &lt;code&gt;color&lt;/code&gt; để đổi màu chữ.</li>
         </ul>
+
+        <!-- Hình đúng vị trí yêu cầu -->
+        <img src="d475739a-8dcb-4eb7-9293-44f6d50e17ea.png" alt="Ảnh vận dụng 1">
 
 
         <!-- Vận dụng 2 -->
         <h3 style="margin-top:18px">2. Vận dụng 2</h3>
 
         <p><strong>Kết quả cần đạt:</strong></p>
-
         <img src="d475739a-8dcb-4eb7-9293-44f6d50e17ea.png" alt="Hình mẫu">
 
-        <p><strong>Mã HTML:</strong></p>
+        <p><strong>Mã HTML (hiển thị dạng code, không chạy):</strong></p>
 
         <pre>
 &lt;p style="font-size:150%"&gt;
@@ -124,4 +141,5 @@
 
 </body>
 </html>
+
 
