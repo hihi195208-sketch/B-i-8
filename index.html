@@ -25,14 +25,20 @@
             margin-top: 25px;
             box-shadow:0 2px 6px rgba(0,0,0,0.1);
         }
-
         pre {
-            background:#eef2ff;
-            padding:14px;
-            border-radius:10px;
-            white-space:pre-wrap;
-            font-family: Consolas, monospace;
-        }
+    background:#eef2ff;   /* nền xanh CHỈ cho bài giải */
+    padding:14px;
+    border-radius:10px;
+    white-space:pre-wrap;
+    font-family: Consolas, monospace;
+}
+
+/* Đề bài: nền trắng, không viền xanh */
+.question {
+    background:white !important;
+    padding:14px;
+    border-radius:10px;
+}
 
         .boxed {
             border:2px solid #2f5bb7;
@@ -86,7 +92,7 @@ Thẻ &lt;b&gt; chỉ có tác dụng &lt;b&gt;in đậm&lt;/b&gt; văn bản.&l
 <!-- Luyện tập 2 -->
 <h3>2. Luyện tập 2 – Đề bài</h3>
 <p>Trình bày đoạn văn bản sau bằng mã HTML:</p>
-<pre style="background:#eef2ff; padding:14px; border-radius:10px;"> 
+<pre class="question">
     INTERNET TỐC ĐỘ CAO
     Dịch vụ Internet tốc độ cao là dịch vụ internet cáp quang chất lượng cao, ổn định, giá cả hợp lí. 
     Các tính năng nổi bật: 
